@@ -1,4 +1,4 @@
-var PORT = require("../server.js");
+// var PORT = require("../server.js");
 
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
@@ -59,8 +59,8 @@ $(function () {
       function () {
         console.log("Updated 1 quote!");
         // reload page
-        location = "http://localhost:" + PORT;
-        location.reload();
+        window.location = "http://localhost:8080";
+        window.location.reload();
       });
   });
 })
